@@ -1,4 +1,5 @@
 import { useQuery, gql } from '@apollo/client'
+import { Link } from 'react-router-dom'
 
 import "./books.css"
 
@@ -23,8 +24,7 @@ function Books () {
   if (error) return <>{error.message}</>
 
   return (
-    <div className='container'>
-
+    <div className="container">
       <ul className="books">
         {
           data.books.map(book => (
@@ -42,6 +42,8 @@ function Books () {
           ))
         }
       </ul>
+
+      <Link to="/newbook" className="book__new">New Book</Link>
     </div>
   )
 }

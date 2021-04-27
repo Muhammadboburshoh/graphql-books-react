@@ -1,5 +1,8 @@
+import {Switch, Route} from 'react-router-dom'
+
 import "./App.css"
-import Books from "./componints/books"
+import Books from "./componints/Books/books"
+import NewBook from "./componints/NewBook/newBook"
 
 
 function App () {
@@ -7,7 +10,16 @@ function App () {
 
   return (
     <>
-      <Books />
+      <Switch>
+        <Route path="/" exact>
+          <Books />
+        </Route>
+
+        <Route path="/newbook" exact>
+          <NewBook />
+        </Route>
+        
+      </Switch>
     </>
   )
 }

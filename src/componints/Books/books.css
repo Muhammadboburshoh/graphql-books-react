@@ -47,3 +47,24 @@
 .book__but-btn:hover {
   transform: scale(1.05);
 }
+
+.book__new {
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(128, 128, 71);
+  transition: background-color 0.3s ease;
+  background-color: rgb(77, 77, 55);
+}
+
+.book__new:hover {
+  background-color: rgb(104, 104, 80);
+}
