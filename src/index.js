@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 
 const client = new ApolloClient ({
-  uri:'http://localhost:5050/',
+  uri:'http://localhost:6060/',
   cache: new InMemoryCache(),
 })
 
